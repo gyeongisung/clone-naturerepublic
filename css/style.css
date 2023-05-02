@@ -8,9 +8,9 @@
   font-size: 16px;
 }
 a {
-color: #000;
-text-decoration: none;
-cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 img {
   vertical-align: middle;
@@ -20,16 +20,16 @@ html {
   font-size: 16px;
 }
 body {
-  font-family: "Noto Sans KR", "맑은고딕", "Malgun Gothic", "dotum", "gulim", sans-serif;
+  font-family: "Noto Sans KR", "맑은고딕", "Malgun Gothic", "dotum", "gulim",
+    sans-serif;
   color: #000;
   font-size: 16px;
-  line-height: 700;
   letter-spacing: 2px;
   word-break: keep-all;
 }
 /* 공용 클래스 */
 .inner {
- display: block;
+  display: block;
   position: relative;
   max-width: 1400px;
   margin: 0 auto;
@@ -44,4 +44,5 @@ body {
 }
 
 /* section 구조 */
-.wrap {}
+.wrap {
+}
