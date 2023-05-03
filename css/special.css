@@ -1,43 +1,108 @@
 @charset "utf-8";
-
+.
 .special-title {
-    font-size: 46px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 120px;
-    margin-bottom: 60px;
+  font-size: 2.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 60px;
+  height: 42px;
+}
+.special-img-title:hover {
+  text-decoration: underline;
 }
 .special-img {
+  border-radius: 30px;
 }
-
-
-
-
-.special-slide1{
-    height: 335px;
-    width: 335px;
+.special-img-title {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: -0.05rem;
+  line-height: 1.2;
+  height: 2.625rem;
 }
-.special-slide2{
-    height: 335px;
-    width: 335px;
+.special-slide1 {
+  height: 335px;
+  width: 335px;
+  margin-bottom: 30px;
 }
-.special-slide3{
-    height: 335px;
-    width: 335px;
+.special-slide2 {
+  height: 335px;
+  width: 335px;
+  margin-bottom: 30px;
 }
-.special-slide4{
-    height: 335px;
-    width: 335px;
+.special-slide3 {
+  height: 335px;
+  width: 335px;
+  margin-bottom: 30px;
+}
+.special-slide4 {
+  height: 335px;
+  width: 335px;
+  margin-bottom: 30px;
 }
 .special-slide1:hover {
-    content: url("../images/6.special/special1-1.jpg");
+  content: url("../images/6.special/special1-1.jpg");
+  border-radius: 30px;
 }
 .special-slide2:hover {
-    content: url("../images/6.special/special2-1.jpg");
+  content: url("../images/6.special/special2-1.jpg");
+  border-radius: 30px;
 }
 .special-slide3:hover {
-    content: url("../images/6.special/special3-1.gif");
+  content: url("../images/6.special/special3-1.gif");
+  border-radius: 30px;
 }
 .special-slide4:hover {
-    content: url("../images/6.special/special4-1.jpg");
+  content: url("../images/6.special/special4-1.jpg");
+  border-radius: 30px;
+}
+.coast {
+}
+.coast-sale {
+  display: inline-block;
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.08125rem;
+}
+.coast-price {
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -0.08125rem;
+  color: #bcbdc1;
+  margin-left: 15px;
+  text-decoration: line-through;
+}
+.coast-wish {
+  float: right;
+  padding-top: 3px;
+}
+.coast-wish-count {
+  vertical-align: middle;
+}
+.special-bt {
+  display: flex;
+  margin-top: 32px;
+}
+.special-bt-left {
+  height: 1.875rem;
+  border-radius: 1.875rem;
+  text-align: center;
+  line-height: 1.875rem;
+  width: 3.75rem;
+  color: #ffffff;
+  background: #8a4933;
+  margin-right: 4px;
+}
+.special-bt-right {
+  height: 1.875rem;
+  border-radius: 1.875rem;
+  text-align: center;
+  line-height: 1.875rem;
+  width: 3.75rem;
+  color: #ffffff;
+  background: #89b03f;
 }
