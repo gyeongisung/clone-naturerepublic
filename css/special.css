@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+.special-title {
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+.special-img {
+}
+
+
+
+
+.special-slide1{
+    height: 335px;
+    width: 335px;
+}
+.special-slide2{
+    height: 335px;
+    width: 335px;
+}
+.special-slide3{
+    height: 335px;
+    width: 335px;
+}
+.special-slide4{
+    height: 335px;
+    width: 335px;
+}
+.special-slide1:hover {
+    content: url("../images/6.special/special1-1.jpg");
+}
+.special-slide2:hover {
+    content: url("../images/6.special/special2-1.jpg");
+}
+.special-slide3:hover {
+    content: url("../images/6.special/special3-1.gif");
+}
+.special-slide4:hover {
+    content: url("../images/6.special/special4-1.jpg");
+}
