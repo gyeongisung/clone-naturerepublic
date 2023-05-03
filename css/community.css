@@ -22,7 +22,8 @@
 .notice-heading {
   display: block;
   width: 150px;
-  height: 63.98px;
+  height: 64px;
+  padding-right: 40px;
   font-size: 22px;
   font-weight: 700;
   float: left;
@@ -32,14 +33,17 @@
 .notice-title {
   display: block;
   width: 400px;
-  padding-right: 15px;
   float: left;
 }
 
 .notice-title a {
   width: 400px;
   height: 32px;
-  letter-spacing: normal;
+}
+
+.notice-title a p {
+  display: inline-block;
+  letter-spacing: -0.0625rem;
   line-height: normal;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -54,7 +58,10 @@
 
 .notice-date a {
   height: 32px;
-  letter-spacing: normal;
+}
+
+.notice-date a p {
+  letter-spacing: -0.0625rem;
   line-height: normal;
   color: #58595b;
 }
@@ -80,14 +87,17 @@
   display: block;
   width: 400px;
   height: 31.99px;
-  padding-right: 15px;
   float: left;
 }
 
 .news-title a {
   width: 400px;
   height: 31.99px;
-  letter-spacing: normal;
+}
+
+.news-title a p {
+  letter-spacing: -0.0625rem;
+  line-height: normal;
   line-height: normal;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -97,14 +107,16 @@
 
 .news-date {
   display: block;
-  letter-spacing: normal;
   line-height: normal;
   float: right;
 }
 
 .news-date a {
   height: 32px;
-  letter-spacing: normal;
+}
+
+.news-date a p {
+  letter-spacing: -0.0625rem;
   line-height: normal;
   color: #58595b;
 }
