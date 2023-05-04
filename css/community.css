@@ -1,122 +1,68 @@
 @charset "utf-8";
 
 .community {
-  width: 100%;
-  height: 63.984px;
+  margin-top: 108px;
 }
 
 .community .inner {
-  margin-top: 108px;
-  width: 1400px;
-  height: 63.984px;
 }
 
 .notice {
   display: block;
-  width: 695px;
+  width: 50%;
   padding-right: 40px;
   border-right: 1px solid #e7e7e7;
   float: left;
-}
-
-.notice-heading {
-  display: block;
-  width: 150px;
-  height: 64px;
-  padding-right: 40px;
-  font-size: 22px;
-  font-weight: 700;
-  float: left;
-  color: #333;
-}
-
-.notice-title {
-  display: block;
-  width: 400px;
-  float: left;
-}
-
-.notice-title a {
-  width: 400px;
-  height: 32px;
-}
-
-.notice-title a p {
-  display: inline-block;
-  letter-spacing: -0.0625rem;
-  line-height: normal;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  color: #58595b;
-}
-
-.notice-date {
-  display: block;
-  float: left;
-}
-
-.notice-date a {
-  height: 32px;
-}
-
-.notice-date a p {
-  letter-spacing: -0.0625rem;
-  line-height: normal;
-  color: #58595b;
+  font-family: "Noto Sans KR";
 }
 
 .news {
   display: block;
-  width: 695px;
+  width: 50%;
+  float: left;
   padding-left: 40px;
-  float: left;
-  color: #333;
+  font-family: "Noto Sans KR";
 }
 
-.news-heading {
-  display: block;
-  width: 150px;
-  height: 63.98px;
+.community-left {
+  float: left;
+  width: 160px;
   font-size: 22px;
-  font-weight: 700;
-  float: left;
 }
-
-.news-title {
+.community-right {
+  float: left;
+  width: calc(100% - 160px);
+}
+.community-heading {
   display: block;
-  width: 400px;
-  height: 31.99px;
-  float: left;
+  color: #333;
+  font-weight: 700;
+  line-height: 32px;
 }
 
-.news-title a {
-  width: 400px;
-  height: 31.99px;
+.community-list {
 }
 
-.news-title a p {
-  letter-spacing: -0.0625rem;
-  line-height: normal;
-  line-height: normal;
+.community-list li {
+  line-height: 32px;
+}
+.community-list li a {
+}
+
+.community-list-title {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #58595b;
-}
-
-.news-date {
-  display: block;
-  line-height: normal;
-  float: right;
-}
-
-.news-date a {
-  height: 32px;
-}
-
-.news-date a p {
   letter-spacing: -0.0625rem;
-  line-height: normal;
+  float: left;
+  width: 80%;
+}
+
+.community-list-day {
+  letter-spacing: -0.0625rem;
   color: #58595b;
+  float: right;
+  width: 20%;
+  text-align: right;
 }
