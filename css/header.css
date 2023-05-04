@@ -28,42 +28,43 @@ header .inner {
     height: 100%;
     float: right;
     overflow: hidden;
+
 }
 .lang{
     position: absolute;
     top: 0;
     right: 0;
-    width: 100px;
-    height: 50px;
-}
-.lang li {
-  position:absolute;
-  top:0; right:0;
-    float:left;
-    display: block;
-    font-size: 14px;
-    text-decoration: underline;
-    letter-spacing: -0.5px;
 }
 .lang span {
-    color:black;
     text-decoration: underline;
     word-spacing: -0.5px;
     color:lightgray;
+    padding-left:10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.lang span:first-child {
+  color:#000;
 }
 
 .gnb {
     position:absolute;
-    top:calc(100% - 53px - 13.5px);
+    top:calc(100% - 50% - 12.5px);
     left:90px;
     display: flex;
-    justify-content: space-between;
+    flex-shrink:  1;
     width: 760.5px;
     height: 106px;
 }
 .gnb li { 
     float:left;
-    width: 106px;
+    margin-right:50px;
+}
+.gnb li:last-child {
+  margin-right:0;
+}
+.gnb li:nth-child(5) {
+  margin-right:65px;
 }
 .gnb li a {
     display: block;
@@ -132,16 +133,33 @@ header .inner {
     top:0;
     left:296px;
     float: left;
-    width: 362px;
+    width: 363px;
     height: 536px;
   }
   .sub1-3 {
     position:absolute;
     top:0;
-    left:592px;
+    left:660px;
     float: left;
     width: 340px;
     height: 536px;
+  }
+  .sub1-3 div {
+    width: 340px;
+    margin-bottom:22px
+  }
+  .sub1-3 div img {
+    border:1px solid #eeeeee;
+    border-radius: 20px;
+    float:left;
+    margin-right:21px;
+    
+  }
+  .sub1-3 div p {
+    padding-bottom:15px;
+  }
+  .sub1-3 div p:hover {
+    text-decoration: underline;
   }
   .sub1-4 {
     position:absolute;
@@ -154,7 +172,7 @@ header .inner {
   .sub1-1 li a,
   .sub1-2 li a {
     display: block;
-    padding-top: 8px;
+    padding-top: 25px;
     color: #666;
   }
   .sub1-1 li a:hover,
@@ -165,22 +183,24 @@ header .inner {
   
   .sub1-1 li:first-child a,
   .sub1-2 li:first-child a {
-    padding-top: 29px;
+    padding-top: 37px;
   }
   
   .sub1-3 li {
     margin-top:28px;
+  }
+  .sub1-3 li a:hover {
+    text-decoration: underline;
   }
   .sub1-3 li img {
     width: 78px;
     height: 78px;
   }
   
+  
   .sub-img {
-    position: absolute;
-    top: 0;
-    left: 0;
     margin-top: 23px;
+    margin-bottom:22px;
     display: block;
     width: 400px;
     height: 400px;
@@ -189,9 +209,7 @@ header .inner {
     float: left;
   }
   .sub1-4 p {
-    position: absolute;
-    left: 0;
-    bottom: 30px;
+
     font-weight: bold;
   }
   
@@ -203,11 +221,14 @@ header .inner {
     left:0px;
     width: 1400px;
     height: 536px;
-    background-color: aqua;
   }
 
 .gnb-cate:hover .cate-box {
   display: block;
 }
-
+.product, 
+.special,
+.insta,
+.community {
+}
 
