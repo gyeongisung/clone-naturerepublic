@@ -4,7 +4,8 @@ window.onload = function () {
 
     
 
-  gnbCate.addEventListener("mouseenter", function () {
+  gnb
+  .addEventListener("mouseenter", function () {
     submenu.style.height = "536px";
   });
 
