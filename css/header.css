@@ -230,9 +230,3 @@ header .inner {
 .gnb .gnb-cate .gnb-cate:hover .cate-box {
   display: block;
 }
-.product,
-.special,
-.insta,
-.community {
-  display: none;
-}
