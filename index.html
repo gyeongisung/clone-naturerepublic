@@ -579,7 +579,11 @@
               new Swiper(".sw-special", {
                 slidesPerView: 4,
                 spaceBetween: 20,
-              });
+                navigation: {
+                  nextEl: ".special .sw-next",
+                  prevEl: ".special .sw-prev ",
+              }
+            });
             </script>
           </div>
         </div>
