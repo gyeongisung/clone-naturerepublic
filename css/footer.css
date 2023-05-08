@@ -1,0 +1,123 @@
+@charset "utf-8";
+.footer {
+  font-family: "Noto Sans KR", sans-serif;
+  margin-top: 150px;
+}
+.footer .footer-wrap {
+  height: 355.94px;
+  padding: 50px 20px 22px 0;
+}
+.footer-left {
+  background: #f9f9f9;
+}
+.footer-info {
+  display: flex;
+  margin-top: 33px;
+  letter-spacing: -0.8px;
+}
+.footer-info li {
+  position: relative;
+  display: inline-block;
+}
+.footer-info li a {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  color: #58595b;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer-info li:first-child a {
+  padding-left: 0;
+}
+.footer-info li a::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 14px;
+  top: 14%;
+  right: 0;
+  border-right: 1px solid #e7e7e7;
+}
+.footer-info li:last-child a::before {
+  border-right: none;
+}
+.footer-company {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 41px;
+}
+.footer-company-left {
+  font-size: 14px;
+  color: #58595b;
+  line-height: 18.2px;
+  letter-spacing: -0.8px;
+}
+.footer-company-left span {
+  display: block;
+  margin-bottom: 17px;
+}
+.footer-company-right {
+  position: absolute;
+  top: 0;
+  left: 172.89px;
+  font-size: 14px;
+  color: #58595b;
+  line-height: 18.2px;
+  letter-spacing: -0.8px;
+}
+.footer-company-right span {
+  display: block;
+  margin-bottom: 17px;
+}
+.footer-company-right .business-number {
+  text-decoration: underline;
+}
+.footer-adress {
+  position: absolute;
+  bottom: 9.5%;
+  left: 432.23px;
+  font-size: 14px;
+  color: #58595b;
+  line-height: 18.2px;
+  letter-spacing: -0.8px;
+}
+.adress-text {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  padding-bottom: 20px;
+}
+.adress-map {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100.484px;
+  height: 30px;
+  background-color: #333333;
+  border-radius: 50px;
+  line-height: 30px;
+  text-align: center;
+}
+.footer-notice {
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.05px;
+  color: #58595b;
+  line-height: 19.2px;
+  margin-top: 36px;
+}
+.footer-copy {
+  font-family: "Manrope", "Noto Sans KR", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19.2px;
+  color: #58595b;
+  letter-spacing: 0;
+}

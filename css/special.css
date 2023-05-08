@@ -13,6 +13,7 @@
 .special-img {
   width: 100%;
 }
+
 .special-img-tag {
   position: relative;
   display: block;
@@ -22,7 +23,6 @@
   overflow: hidden;
   margin-bottom: 30px;
 }
-
 .special-slide-img-off {
   position: absolute;
   left: 50%;
@@ -41,10 +41,94 @@
   opacity: 0;
   transition: opacity 0.5s;
 }
-.special-img a:hover .special-slide-img-off {
+.special-img a:hover > .special-slide-img-off {
   opacity: 0;
 }
-.special-img a:hover .special-slide-img-on {
+.special-img a:hover > .special-slide-img-on {
+  opacity: 1;
+}
+.special-badge-list {
+}
+.special-badge {
+  position: absolute;
+  width: 57.59px;
+}
+.special-badge:first-child {
+  top: 10px;
+  right: 10px;
+}
+.special-badge:nth-child(2) {
+  top: 70px;
+  right: 10px;
+}
+.special-badge:nth-child(3) {
+  top: 130px;
+  right: 10px;
+}
+.special-badge:nth-child(4) {
+  top: 190px;
+  right: 10px;
+}
+.special-img-icon {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 18%;
+  background: #333333;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  border-radius: 0 0 30px 30px;
+}
+.special-img-icon::after {
+  display: inline-block;
+  position: absolute;
+  bottom: 25%;
+  left: calc(50% - 1px);
+  content: "";
+  width: 1px;
+  height: 25px;
+  line-height: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 0 30px 30px;
+}
+.special-img a:hover > .special-img-icon {
+  transform: translateY(0);
+  opacity: 1;
+}
+.special-img-heart {
+  display: block;
+  position: absolute;
+  left: 20%;
+  bottom: 25%;
+  max-width: 100%;
+  opacity: 0;
+}
+.special-img a:hover > .special-img-icon .special-img-heart {
+  position: absolute;
+  left: 20%;
+  bottom: 25%;
+  max-width: 100%;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+.special-img-cart {
+  display: block;
+  position: absolute;
+  right: 20%;
+  bottom: 25%;
+  max-width: 100%;
+  opacity: 0;
+}
+.special-img a:hover > .special-img-icon .special-img-cart {
+  position: absolute;
+  right: 20%;
+  bottom: 25%;
+  max-width: 100%;
+  transition: opacity 0.5s;
   opacity: 1;
 }
 
