@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.brand {
+    margin-top: 40px;
+}
+
+.brand .inner {
+}
+
+.brand-banner {
+    display: block;
+    width: 600px;
+}
+
+.brand-banner a {
+    display: block;
+    width: 600px;
+    height: 600px;
+    border-radius: 10%;
+    overflow: hidden;
+}
+.brand-banner a img {
+    width: 600px;
+    height: 600px;
+}
+
+.brand-banner a img:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.brand-item {
+    display: block;
+    width: calc(100% - 600px);
+    padding-left: 50px;
+    float: left;
+}
+
+.brand-line {
+    display: block;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.brand-concept {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #3a5542;
+}
+
+.brand-title {
+    display: block;
+    font-size: 18px;
+    font-family: "Noto Sans KR";
+    color: #58595b;
+}
