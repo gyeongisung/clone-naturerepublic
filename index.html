@@ -11,7 +11,6 @@
       <script src="js/html5shiv.js"></script>
     <![endif]-->
     <!-- css 파일 적용 -->
-    <link rel="stylesheet" href="css/community.css" />
     <script src="js/prefixfree.min.js"></script>
     <script src="js/respond.min.js"></script>
     <script src="js/header.js"></script>
@@ -20,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+      
     <!-- 플라잉 배너 -->
   </head>
   <body>
@@ -29,6 +29,7 @@
         <div class="inner">
           <div class="header-left">
             <a href="#"><div class="logo"></div></a>
+
             <ul class="icon">
               <li>
                 <a href="#">
@@ -37,14 +38,16 @@
               </li>
             </ul>
           </div>
+
           <div class="header-right">
-            <div class="lang">
-              <span>KR</span>
-              <span>EN</span>
-            </div>
+            <ul class="lang">
+              <li><em>KR</em></li>
+              <li><span>EN</span></li>
+            </ul>
+
             <ul class="gnb">
               <li class="gnb-cate">
-                <a href="#">카테고리</a>
+                <a href="#"><b>카테고리</b></a>
               </li>
               <li>
                 <a href="#">베스트</a>
@@ -88,6 +91,7 @@
               </li>
             </ul>
           </div>
+
           <div class="cate-box">
             <ul class="sub1-1">
               <li><a href="#">스킨케어</a></li>
@@ -109,6 +113,7 @@
               <li><a href="#">아이크림</a></li>
               <li><a href="#">베이비</a></li>
             </ul>
+
             <ul class="sub1-3">
               <li>
                 <a href="#">
@@ -138,16 +143,30 @@
                 </a>
               </li>
             </ul>
+
             <ul class="sub1-4">
               <li>
                 <a href="#">
-                  <img src="./images/1.header/catemain.jpg" alt="sub-img" class="sub-img" />
-                  <p>피부밀도력 113% 상승!<br />콤부차 블랙티 트리트먼트 에센스</p>
+                  <img src="./images/1.header/catemain.jpg" alt="">
+                  <p>
+                    피부 밀도력 113% 상승!
+                    콤부차 블랙티 트리트먼트 에센스
+                  </p>
                 </a>
+                <!-- <a href="#">
+                  <img src="./images/1.header/catemain.jpg" alt="sub-img" class="sub-img" />
+                  <p>
+                    피부밀도력 113% 상승!<br />
+                    콤부차 블랙티 트리트먼트 에센스
+                  </p>
+                </a> -->
               </li>
             </ul>
           </div>
+
+
         </div>
+
       </header>
       <!--// header -->
       <!-- evnet -->
@@ -155,28 +174,62 @@
         <div class="inner"></div>
       </section>
       <!--// event -->
+
       <!-- ranking -->
       <section class="ranking">
-        <div></div>
+        <div class="inner">
+          <div class="ranking-list">
+            <h2>네리<b>RANKING</b></h2>
+            <div class="ranking-cate">
+              <ul>
+                <li>
+                  <a href="#" class="ranking-time">실시간 베스트</a>
+                </li>
+                <li>
+                  <a href="#" class="ranking-week">주간 베스트</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ranking-item">
+              <ul class="ranking-"></ul>
+            </div>
+          </div>
+        </div>
       </section>
       <!--// ranking -->
+
       <!-- brand -->
       <section class="brand">
-        <div></div>
+        <div class="inner">
+
+          <div class="brand-banner" clearfix>
+            <a href="#"><img src="images/4.brandline/brandmain.png" alt="수딩크림">
+            </a>
+          </div>
+
+          <div class="brand-item" clearfix>
+            <span class="brand-line">BRAND LINE</span>
+            <span class="brand-concept">HERBOLOGY</span>
+            <span class="brand-title">#허브의 힘을 오롯이, 산쑥의 초(草)진정의 힘</span>
+
+
+          </div>
+        </div>
       </section>
       <!--// brand -->
+      
       <!-- product -->
       <section class="product">
         <div class="inner">
           <ul class="product-img">
             <li>
-              <a href="#"><img src="/images/5.productline/product1.jpg" alt="진생로얄실크" /></a>
+              <a href="#"><img src="images/5.productline/product1.jpg" alt="진생로얄실크" /></a>
             </li>
             <li>
-              <a href="#"><img src="/images/5.productline/product2.jpg" alt="수딩알로에" /></a>
+              <a href="#"><img src="images/5.productline/product2.jpg" alt="수딩알로에" /></a>
             </li>
             <li>
-              <a href="#"><img src="/images/5.productline/product3.jpg" alt="마일드시카" /></a>
+              <a href="#"><img src="images/5.productline/product3.jpg" alt="마일드시카" /></a>
             </li>
           </ul>
         </div>
@@ -187,96 +240,348 @@
         <div class="inner">
           <div class="special-title"><h2>SPECIAL SET</h2></div>
           <div class="section-slide">
+            <button class="sw-bt sw-prev">이전</button>
+            <button class="sw-bt sw-next">다음</button>
             <div class="swiper sw-special">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
+
                   <div class="special-img">
-                    <a href="#"><img class="special-slide1" src="images/6.special/special1.jpg" alt="" /></a>
-                    <a href="#"><span>히아테놀 하이드라 2종 기획세트 (미백기능성)</span></a>
+                    <a href="#" class="special-img-tag">
+                      <img class="special-slide-img-off" src="images/6.special/special1.jpg" alt="미백기능성" />
+                      <img class="special-slide-img-on" src="images/6.special/special1-1.jpg" alt="미백기능성" />
+                      <span class="special-img-icon">
+                      <img class="special-img-heart" src="images/6.special/icon_wish_white.png" alt="하트">
+                      <img class="special-img-cart" src="images/6.special/icon_cart_white.png" alt="카트">
+                      </span>
+                    </a>
+                    <div class="special-img-title">
+                      <a href="#">히아테놀 하이드라 2종 기획세트 (미백기능성)</a>
+                    </div>
                   </div>
-                  <div class="coast">
+                  <div class="coast clearfix">
                     <span class="coast-sale">39,200원</span>
                     <span class="coast-price">56,000원</span>
-                    <span class="coast-icon"><img src="images/6.special/icon_good.png" alt="good" /></span>
-                    <span class="coast-wish">0</span>
+                    <span class="coast-wish">
+                        <em class="coast-wish-icon"><img src="images/6.special/icon_good.png" alt="good" /></em>
+                        <em class="coast-wish-count">0</em>
+                    </span>
                   </div>
                   <div>
-                    <ul>
-                      <li>30%</li>
-                      <li>NEW</li>
+                    <ul class="special-bt clearfix">
+                      <li class="special-bt-left">30%</li>
+                      <li class="special-bt-right">NEW</li>
                     </ul>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="special-img">
-                    <a href="#"><img class="special-slide2" src="images/6.special/special2.jpg" alt="" /></a>
-                    <a href="#"><span>히아테놀 하이드라 2종 기획세트 (미백기능성)</span></a>
+                    <a href="#" class="special-img-tag">
+                      <img class="special-slide-img-off" src="images/6.special/special2.jpg" alt="수딩크림" />
+                      <img class="special-slide-img-on" src="images/6.special/special2-1.jpg" alt="수딩크림" />
+                      <span class="special-badge-list">
+                        <img class="special-badge" src="images/awards_47.png" alt="뱃지">
+                      </span>
+                      <span class="special-img-icon">
+                      <img class="special-img-heart" src="images/6.special/icon_wish_white.png" alt="하트">
+                      <img class="special-img-cart" src="images/6.special/icon_cart_white.png" alt="카트">
+                      </span>
+                    </a>
+                    <a href="#" class="special-img-title">그린더마 마일드 시카 수딩 크림 기획세트(민감성 피부용)</a>
                   </div>
-                  <div class="coast">
-                    <span class="coast-sale">39,200원</span>
-                    <span class="coast-price">56,000원</span>
-                    <span class="coast-icon"><img src="images/6.special/icon_good.png" alt="good" /></span>
-                    <span class="coast-wish">0</span>
+                  <div class="coast clearfix">
+                    <span class="coast-sale">23,800원</span>
+                    <span class="coast-price">55,000원</span>
+                    <span class="coast-wish">
+                      <em class="coast-wish-icon"><img src="images/6.special/icon_good.png" alt="good" /></em>
+                      <em class="coast-wish-count">0</em>
+                    </span>
+                  </div>
+                  <div>
+                    <ul class="special-bt clearfix">
+                      <li class="special-bt-left">57%</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="special-img">                    
+                    <a href="#" class="special-img-tag">
+                      <img class="special-slide-img-off" src="images/6.special/special3.jpg" alt="수딩크림" />
+                      <img class="special-slide-img-on" src="images/6.special/special3-1.gif" alt="수딩크림" />
+                      <span class="special-badge-list">
+                        <img class="special-badge" src="images/6.special/awards_puple.png" alt="뱃지">
+                        <img class="special-badge" src="images/6.special/awards_mint.png" alt="뱃지">
+                        <img class="special-badge" src="images/6.special/awards_black.png" alt="뱃지">
+                      </span>                
+                      <span class="special-img-icon">
+                        <img class="special-img-heart" src="images/6.special/icon_wish_white.png" alt="하트">
+                        <img class="special-img-cart" src="images/6.special/icon_cart_white.png" alt="카트">
+                        </span>
+                    </a>                    
+                    <a href="#" class="special-img-title">비타페어C 잡티세럼 리미티드 기획세트 (미백)</a>
+                  </div>
+                  <div class="coast clearfix">
+                    <span class="coast-sale">27,000원</span>
+                    <span class="coast-price">49,000원</span>
+                    <span class="coast-wish">
+                      <em class="coast-wish-icon"><img src="images/6.special/icon_good.png" alt="good" /></em>
+                      <em class="coast-wish-count">5</em>
+                    </span>
+                  </div>
+                  <div>
+                    <ul class="special-bt clearfix">
+                      <li class="special-bt-left">46%</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="special-img">                    
+                    <a href="#" class="special-img-tag">
+                      <img class="special-slide-img-off" src="images/6.special/special4.jpg" alt="탈모" />
+                      <img class="special-slide-img-on" src="images/6.special/special4-1.jpg" alt="탈모" />
+                      <span class="special-badge-list">
+                        <img class="special-badge" src="images/awards_47.png" alt="뱃지">
+                      </span>
+                      <span class="special-img-icon">
+                      <img class="special-img-heart" src="images/6.special/icon_wish_white.png" alt="하트">
+                      <img class="special-img-cart" src="images/6.special/icon_cart_white.png" alt="카트">
+                      </span>
+                    </a>                   
+                    <a href="#" class="special-img-title">블랙빈 탈모증상 개선 기획세트</a>
+                  </div>
+                  <div class="coast clearfix">
+                    <span class="coast-sale">24,800원</span>
+                    <span class="coast-price">51,000원</span>
+                    <span class="coast-wish">
+                      <em class="coast-wish-icon"><img src="images/6.special/icon_good.png" alt="good" /></em>
+                      <em class="coast-wish-count">5</em>
+                    </span>
                   </div>
                   <div>
                     <ul>
-                      <li>30%</li>
-                      <li>NEW</li>
+                      <ul class="special-bt clearfix">
+                        <li class="special-bt-left">51%</li>
                     </ul>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="special-img">
-                    <a href="#"><img class="special-slide3" src="images/6.special/special3.jpg" alt="" /></a>
-                    <a href="#"><span>히아테놀 하이드라 2종 기획세트 (미백기능성)</span></a>
+                    <a href="#" class="special-img-tag">
+                      <img class="special-slide-img-off" src="images/6.special/special5.jpg" alt="주름" />
+                      <img class="special-slide-img-on" src="images/6.special/special5-1.jpg" alt="주름" />
+                      <span class="special-img-icon">
+                      <img class="special-img-heart" src="images/6.special/icon_wish_white.png" alt="하트">
+                      <img class="special-img-cart" src="images/6.special/icon_cart_white.png" alt="카트">
+                      </span>
+                    </a>
+                    <a href="#" class="special-img-title">진생 로얄 실크 스킨케어 2종 세트 (미백·주름개선)</a>
                   </div>
-                  <div class="coast">
-                    <span class="coast-sale">39,200원</span>
-                    <span class="coast-price">56,000원</span>
-                    <span class="coast-icon"><img src="images/6.special/icon_good.png" alt="good" /></span>
-                    <span class="coast-wish">0</span>
+                  <div class="coast clearfix">
+                    <span class="coast-sale">53,200원</span>
+                    <span class="coast-price">76,000원</span>
+                    <span class="coast-wish">
+                      <em class="coast-wish-icon"><img src="images/6.special/icon_good.png" alt="good" /></em>
+                      <em class="coast-wish-count">0</em>
+                    </span>
                   </div>
                   <div>
                     <ul>
-                      <li>30%</li>
-                      <li>NEW</li>
+                      <ul class="special-bt clearfix">
+                        <li class="special-bt-left">30%</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="special-img">                    
+                    <a href="#" class="special-img-tag">
+                      <img class="special-slide-img-off" src="images/6.special/special6.jpg" alt="녹차" />
+                      <img class="special-slide-img-on" src="images/6.special/special6-1.gif" alt="녹차" />
+                      <span class="special-badge-list">
+                        <img class="special-badge" src="images/awards_47.png" alt="뱃지">
+                      </span>
+                      <span class="special-img-icon">
+                      <img class="special-img-heart" src="images/6.special/icon_wish_white.png" alt="하트">
+                      <img class="special-img-cart" src="images/6.special/icon_cart_white.png" alt="카트">
+                      </span>
+                    </a>
+                    <a href="#" class="special-img-title">맑은녹차수 마일드 빅토너 기획세트</a>
+                  </div>
+                  <div class="coast clearfix">
+                    <span class="coast-sale">11,800원</span>
+                    <span class="coast-price">25,000원</span>
+                    <span class="coast-wish">
+                      <em class="coast-wish-icon"><img src="images/6.special/icon_good.png" alt="good" /></em>
+                      <em class="coast-wish-count">5</em>
+                    </span>
+                  </div>
+                  <div>
+                    <ul>
+                      <ul class="special-bt clearfix">
+                        <li class="special-bt-left">53%</li>
                     </ul>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="special-img">
-                    <a href="#"><img class="special-slide4" src="images/6.special/special4.jpg" alt="" /></a>
-                    <a href="#"><span>히아테놀 하이드라 2종 기획세트 (미백기능성)</span></a>
+                    <a href="#" class="special-img-tag">
+                      <img class="special-slide-img-off" src="images/6.special/special7.jpg" alt="옴므" />
+                      <img class="special-slide-img-on" src="images/6.special/special7-1.gif" alt="옴므" />
+                      <span class="special-badge-list">
+                        <img class="special-badge" src="images/awards_47.png" alt="뱃지">
+                      </span>
+                      <span class="special-img-icon">
+                      <img class="special-img-heart" src="images/6.special/icon_wish_white.png" alt="하트">
+                      <img class="special-img-cart" src="images/6.special/icon_cart_white.png" alt="카트">
+                      </span>
+                    </a>
+                    <a href="#" class="special-img-title">맨인블루 옴므 기획세트</a>
                   </div>
-                  <div class="coast">
-                    <span class="coast-sale">39,200원</span>
-                    <span class="coast-price">56,000원</span>
-                    <span class="coast-icon"><img src="images/6.special/icon_good.png" alt="good" /></span>
-                    <span class="coast-wish">0</span>
+                  <div class="coast clearfix">
+                    <span class="coast-sale">13,900원</span>
+                    <span class="coast-price">24,900원</span>
+                    <span class="coast-wish">
+                      <em class="coast-wish-icon"><img src="images/6.special/icon_good.png" alt="good" /></em>
+                      <em class="coast-wish-count">5</em>
+                    </span>
                   </div>
                   <div>
                     <ul>
-                      <li>30%</li>
-                      <li>NEW</li>
+                      <ul class="special-bt clearfix">
+                        <li class="special-bt-left">44%</li>
+                        <li class="special-bt-right">BEST</li>
                     </ul>
                   </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="special-img">
+                    <a href="#" class="special-img-tag">
+                      <img class="special-slide-img-off" src="images/6.special/special8.jpg" alt="녹차" />
+                      <img class="special-slide-img-on" src="images/6.special/special8-1.jpg" alt="녹차" />
+                      <span class="special-badge-list">
+                        <img class="special-badge" src="images/awards_47.png" alt="뱃지">
+                      </span>
+                      <span class="special-img-icon">
+                      <img class="special-img-heart" src="images/6.special/icon_wish_white.png" alt="하트">
+                      <img class="special-img-cart" src="images/6.special/icon_cart_white.png" alt="카트">
+                      </span>
+                    </a>
+                    <a href="#" class="special-img-title">맑은녹차수 스킨케어 기획세트</a>
+                  </div>
+                  <div class="coast clearfix">
+                    <span class="coast-sale">16,800원</span>
+                    <span class="coast-price">40,000원</span>
+                    <span class="coast-wish">
+                      <em class="coast-wish-icon"><img src="images/6.special/icon_good.png" alt="good" /></em>
+                      <em class="coast-wish-count">5</em>
+                    </span>
+                  </div>
+                  <div>
+                    <ul>
+                      <ul class="special-bt clearfix">
+                        <li class="special-bt-left">58%</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="special-img">
+                    <a href="#" class="special-img-tag">
+                      <img class="special-slide-img-off" src="images/6.special/special9.jpg" alt="잡티" />
+                      <img class="special-slide-img-on" src="images/6.special/special9-1.jpg" alt="잡티" />
+                      <span class="special-badge-list">
+                        <img class="special-badge" src="images/awards_47.png" alt="뱃지">
+                        <img class="special-badge" src="images/6.special/awards_puple.png" alt="뱃지">
+                        <img class="special-badge" src="images/6.special/awards_mint.png" alt="뱃지">
+                        <img class="special-badge" src="images/6.special/awards_black.png" alt="뱃지">
+                      </span> 
+                      <span class="special-img-icon">
+                      <img class="special-img-heart" src="images/6.special/icon_wish_white.png" alt="하트">
+                      <img class="special-img-cart" src="images/6.special/icon_cart_white.png" alt="카트">
+                      </span>
+                    </a>                    
+                    <a href="#" class="special-img-title">비타페어C 잡티세럼 스페셜 기획세트(미백)</a>
+                  </div>
+                  <div class="coast clearfix">
+                    <span class="coast-sale">20,900원</span>
+                    <span class="coast-price">24,900원</span>
+                    <span class="coast-wish">
+                      <em class="coast-wish-icon"><img src="images/6.special/icon_good.png" alt="good" /></em>
+                      <em class="coast-wish-count">5</em>
+                    </span>
+                  </div>
+                  <div>
+                    <ul>
+                      <ul class="special-bt clearfix">
+                        <li class="special-bt-left">16%</li>
+                        <li class="special-bt-right">BEST</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="special-img">
+                    <a href="#" class="special-img-tag">
+                      <img class="special-slide-img-off" src="images/6.special/special10.jpg" alt="스네일" />
+                      <img class="special-slide-img-on" src="images/6.special/special10-1.jpg" alt="스네일" />
+                      <span class="special-img-icon">
+                      <img class="special-img-heart" src="images/6.special/icon_wish_white.png" alt="하트">
+                      <img class="special-img-cart" src="images/6.special/icon_cart_white.png" alt="카트">
+                      </span>
+                    </a>                    
+                    <a href="#" class="special-img-title">스네일 솔루션 2종 기획세트</a>
+                  </div>
+                  <div class="coast clearfix">
+                    <span class="coast-sale">44,000원</span>
+                    <span class="coast-price">88,000원</span>
+                    <span class="coast-wish">
+                      <em class="coast-wish-icon"><img src="images/6.special/icon_good.png" alt="good" /></em>
+                      <em class="coast-wish-count">5</em>
+                    </span>
+                  </div>
+                  <div>
+                    <ul>
+                      <ul class="special-bt clearfix">
+                        <li class="special-bt-left">51%</li>
+                        <li class="special-bt-right">BEST</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="special-img">
+                    <a href="#" class="special-img-tag">
+                      <img class="special-slide-img-off" src="images/6.special/special11.jpg" alt="잡티" />
+                      <img class="special-slide-img-on" src="images/6.special/special11-1.jpg" alt="잡티" />
+                      <span class="special-badge-list">
+                        <img class="special-badge" src="images/6.special/awards_puple.png" alt="뱃지">
+                        <img class="special-badge" src="images/6.special/awards_mint.png" alt="뱃지">
+                        <img class="special-badge" src="images/6.special/awards_black.png" alt="뱃지">
+                      <span class="special-img-icon">
+                      <img class="special-img-heart" src="images/6.special/icon_wish_white.png" alt="하트">
+                      <img class="special-img-cart" src="images/6.special/icon_cart_white.png" alt="카트">
+                      </span>
+                    </a>
+                    <a href="#" class="special-img-title">비타페어C 잡티세럼 with 잡티크림 기획세트</a>
+                  </div>
+                  <div class="coast clearfix">
+                    <span class="coast-sale">19,920원</span>
+                    <span class="coast-price">24,900원</span>
+                    <span class="coast-wish">
+                      <em class="coast-wish-icon"><img src="images/6.special/icon_good.png" alt="good" /></em>
+                      <em class="coast-wish-count">5</em>
+                    </span>
+                  </div>
+                  <div>
+                    <ul>
+                      <ul class="special-bt clearfix">
+                        <li class="special-bt-left">20%</li>
+                    </ul>
+                  </div>
+                </div>
+                
               </div>
             </div>
             <script>
               new Swiper(".sw-special", {
                 slidesPerView: 4,
-                spaceBetween: 10,
-                breakpoints: {
-                  1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 32,
-                  },
-                  1280: {
-                    slidesPerView: 4,
-                    spaceBetween: 27,
-                  },
-                },
+                spaceBetween: 20,
               });
             </script>
           </div>
@@ -285,7 +590,151 @@
       <!--// special -->
       <!-- review -->
       <section class="review">
-        <div></div>
+        <div class="review-bg"></div>
+        <div class="inner">
+          <h2>
+            BEST REVIEW
+            <a href="#" class="review-more">더보기</a>
+          </h2>
+          <div class="review-main">
+            <div class="review-info">
+              <a href="#" class="review-box">
+                <img src="images/7review/review1.jpg" alt="리뷰" class="review-img" />
+                <div class="review-contents">
+                  <p class="review-title">[단품/세트] 콤부차 화이트티 트리트먼트 에센스(피부결개선)</p>
+                  <p class="review-body">블랙티 에센스도 사용해봤는데 화이트티 에센스는 라이트하고 산뜻한 느낌이에요. 향은 녹차향이랑 꽃 향이 섞인 느낌으로 마음까지 진정되는 향이에요. 3스킨법으로 사용했더니 확실히 피부 속건조가 잡히더라구요. 확실히 가볍고 청량감 있는 마무리감 덕분에 각질 케어에 효과적이었어요. 화장 전에 피부결 정돈용으로 사용하면 베이스가 들뜨지 않아서 좋았어요. 흡수력도 좋아서 피부속까지 수분 충전이 잘 되고 용량도 많아서 토너팩용으로도 좋아요!</p>
+                  <span class="review-user">hyu*******</span>
+                  <span class="review-star">
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <em>5</em>
+                  </span>
+                </div>
+              </a>
+              <a href="#" class="review-link clearfix">
+                <div class="review-item-img">
+                  <img src="images/7review/review_thumb.jpg" alt="리뷰" />
+                </div>
+                <div class="review-item-info">
+                  <ul class="review-item-list">
+                    <li>
+                      <span class="review-item-title"> [GIFT: 페이셜패드]콤부차 화이트티 트리트먼트 에센스(피부결개선) </span>
+                    </li>
+                    <li>
+                      <span class="review-item-price"><b>25,900</b>원</span>
+                      <span class="review-item-price2">37,000원</span>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="review-info">
+              <a href="#" class="review-box">
+                <img src="images/7review/review2.jpg" alt="리뷰" class="review-img" />
+                <div class="review-contents">
+                  <p class="review-title">[단품/세트] 콤부차 화이트티 트리트먼트 에센스(피부결개선)</p>
+                  <p class="review-body">-텍스처 블랙티 에센스는 콧물같은 제형인데, 화이트티 에센스는 물같은 제형이에요! 딱 토너라는 이름을 들었을 때 상상할 수 있는 그런 텍스처!! 그리고 향은 프로폴리스 향이 나서 그렇게 낯선 향은 아니라고 보시면 될 것 같아용 -사용감 콤부차 화이트티 에센스는 피부결 개선에 집중된 제품인데요, 녹차추출물이랑 병풀추출물을 통해 각질을 정리해주는 제품이라고 보시면 될 것같아요! 콤부차 블랙티 에센스는 이에 비해 피부 장벽과 밀도감을 채워주는 제품이라 원하시는 기능에 따라 선택해주시면 좋을 것 같습니당ㅎㅎ 또 화장 전에 사용해주기 정말 좋다고 생각했는데요! 원래 베이스 메이크업 하기 전에 기초는 가볍게 해주셔야 되는것 아시죠?! 각질을 누른다고 무겁게 기초를 바르시면 나중에 베이스가 뭉치고 밀리고 무너질때도 매우매우 더럽게 무너진답니다!! 그런데 콤부차 화이트티 트리트먼트 에센스로 피부 결정리 가볍게 해주시고 잘 두드려서 흡수시켜준 뒤에 가벼운 크림 발라주시고 베이스 메이크업 얹어주시면 각질도 안뜨고 밀리지 않는 베이스 메이크업을 완성할 수 있겠죠?ㅎㅎ</p>
+                  <span class="review-user">jh9*******</span>
+                  <span class="review-star">
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <em>5</em>
+                  </span>
+                </div>
+              </a>
+              <a href="#" class="review-link clearfix">
+                <div class="review-item-img">
+                  <img src="images/7review/review_thumb.jpg" alt="리뷰" />
+                </div>
+                <div class="review-item-info">
+                  <ul class="review-item-list">
+                    <li>
+                      <span class="review-item-title"> [GIFT: 페이셜패드]콤부차 화이트티 트리트먼트 에센스(피부결개선) </span>
+                    </li>
+                    <li>
+                      <span class="review-item-price"><b>25,900</b>원</span>
+                      <span class="review-item-price2">37,000원</span>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="review-info">
+              <a href="#" class="review-box">
+                <img src="images/7review/review3.jpg" alt="리뷰" class="review-img" />
+                <div class="review-contents">
+                  <p class="review-title">[단품/세트] 콤부차 화이트티 트리트먼트 에센스(피부결개선)</p>
+                  <p class="review-body">은은한 티향이 호불호 없이 사용하기 좋았어요! 요즘 황사랑 미세먼지가 너무 심해서 한번 외출하고 들어오면 확실히 피부도 답답하고 노폐물이 쌓이는게 걱정이었는데 세안 후에 솜에 충분히 적셔서 가볍게 닦토로 사용하니까 산뜻하고 가볍게 사용할 수 있어서 너무 좋았어요ㅎㅎ</p>
+                  <span class="review-user">qkr*********</span>
+                  <span class="review-star">
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <em>5</em>
+                  </span>
+                </div>
+              </a>
+              <a href="#" class="review-link clearfix">
+                <div class="review-item-img">
+                  <img src="images/7review/review_thumb.jpg" alt="리뷰" />
+                </div>
+                <div class="review-item-info">
+                  <ul class="review-item-list">
+                    <li>
+                      <span class="review-item-title"> [GIFT: 페이셜패드]콤부차 화이트티 트리트먼트 에센스(피부결개선) </span>
+                    </li>
+                    <li>
+                      <span class="review-item-price"><b>25,900</b>원</span>
+                      <span class="review-item-price2">37,000원</span>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+            <div class="review-info">
+              <a href="#" class="review-box">
+                <img src="images/7review/review4.jpg" alt="리뷰" class="review-img" />
+                <div class="review-contents">
+                  <p class="review-title">[단품/세트] 콤부차 화이트티 트리트먼트 에센스(피부결개선)</p>
+                  <p class="review-body">묽은 제형, 라이트한 사용감이여서 피부에 부담을 주지않아요. 무엇보다 겉돌지 않아서 피부에 빠르게 흡수돼요. 바른 후는 끈적임 없이 청량감있게 보습되여서 너무 만족하면서 사용하고 있어요. 확실히 사용 후 피부결이 한층 더 매끈해진 효과를 볼 수 있었어요. 산뜻한 사용감이지만 피부 속부터 수분진정 시켜줘서 피부가 더욱 수분탱글해지는 것 같아서 쌩얼에도 점점 자신감이 생기는 것 같아요.​</p>
+                  <span class="review-user">fie*****</span>
+                  <span class="review-star">
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <img src="images/7review/icon_good_white.png" alt="리뷰" />
+                    <em>5</em>
+                  </span>
+                </div>
+              </a>
+              <a href="#" class="review-link clearfix">
+                <div class="review-item-img">
+                  <img src="images/7review/review_thumb.jpg" alt="리뷰" />
+                </div>
+                <div class="review-item-info">
+                  <ul class="review-item-list">
+                    <li>
+                      <span class="review-item-title"> [GIFT: 페이셜패드]콤부차 화이트티 트리트먼트 에센스(피부결개선) </span>
+                    </li>
+                    <li>
+                      <span class="review-item-price"><b>25,900</b>원</span>
+                      <span class="review-item-price2">37,000원</span>
+                    </li>
+                  </ul>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </section>
       <!--// review -->
       <!-- insta -->
@@ -296,27 +745,27 @@
             <ul>
               <li>
                 <a href="#">
-                  <img src="./images/8.natureinsta/insta1.jpg" alt="NCT" />
+                  <img src="./images/8.natureinsta/insta1.jpg" alt="" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/8.natureinsta/insta2.jpg" alt="NCT" />
+                  <img src="./images/8.natureinsta/insta2.jpg" alt="" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/8.natureinsta/insta3.jpg" alt="NCT" />
+                  <img src="./images/8.natureinsta/insta3.jpg" alt="" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/8.natureinsta/insta4.jpg" alt="NCT" />
+                  <img src="./images/8.natureinsta/insta4.jpg" alt="" />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <img src="./images/8.natureinsta/insta5.jpg" alt="NCT" />
+                  <img src="./images/8.natureinsta/insta5.jpg" alt="" />
                 </a>
               </li>
             </ul>
@@ -326,35 +775,103 @@
       <!--// insta -->
       <!-- community -->
       <section class="community">
-        <div class="inner">
-          <div class="notice">
-            <span class="notice-heading">공지사항</span>
-            <span class="notice-title">
-              <a href="#"><p>근로자의날 공휴일 소비자상담실 업무 중단 안내</p></a>
-              <a href="#"><p>배송비 인상 및 시행일자 안내</p></a>
-            </span>
-            <span class="notice-date">
-              <a href="#"><p>2023-04-27</p></a>
-              <a href="#"><p>2023-04-24</p></a>
-            </span>
+        <div class="inner clearfix">
+          <div class="notice clearfix">
+            <div class="community-left">
+              <h3 class="community-heading">공지사항</h3>
+            </div>
+            <div class="community-right">
+              <ul class="community-list">
+                <li>
+                  <a href="#">
+                    <span class="community-list-title">근로자의날 공휴일 소비자상담실 업무 중단 안내</span>
+                    <span class="community-list-day">2023-04-27</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="community-list-title">배송비 인상 및 시행일자 안내</span>
+                    <span class="community-list-day">2023-04-24</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="news">
-            <span class="news-heading">소식/미디어</span>
-            <span class="news-title">
-              <a href="#"><p>지구의 날 맞아 도시숲 조성에 제품 1개 당 1천원씩 기부진행</p></a>
-              <a href="#"><p>네이처리퍼블릭, 꿀광 ‘허니멜팅립’출시 열흘만에 품절대란</p></a>
-            </span>
-            <span class="news-date">
-              <a href="#"><p>2023-04-19</p></a>
-              <a href="#"><p>2023-04-06</p></a>
-            </span>
+
+          <div class="news clearfix">
+            <div class="community-left">
+              <h3 class="community-heading">소식/미디어</h3>
+            </div>
+            <div class="community-right">
+              <ul class="community-list">
+                <li>
+                  <a href="#">
+                    <span class="community-list-title">지구의 날 맞아 도시숲 조성에 제품 1개 당 1천원씩 기부진행</span>
+                    <span class="community-list-day">2023-04-19</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="community-list-title">네이처리퍼블릭, 꿀광 ‘허니멜팅립’출시 열흘만에 품절대란</span>
+                    <span class="community-list-day">2023-04-06</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
       <!--// community -->
       <!-- footer -->
       <footer class="footer">
-        <div></div>
+        <div class="inner">
+          <div class="footer-wrap">
+          <div class="footer-left">
+            <img src="images/10.footer/icon_logo_footer.png" alt="logo">
+            <ul class="footer-info">
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">가맹점문의</a></li>
+              <li><a href="#">제휴문의</a></li>
+              <li><a href="#">신규입점문의</a></li>
+              <li><a href="#">본사정품판매처</a></li>
+              <li><a href="#">채용안내</a></li>
+            </ul>
+            <ul class="footer-company">
+              <li class="footer-company-left">
+                <span>회사명</span>
+                <span>대표이사</span>
+                <span>사업자등록번호</span>
+                <span>통신판매업 신고번호</span>
+                <span>개인정보관리책임자</span>
+              </li>
+              <li class="footer-company-right">
+                <span>네이처리퍼블릭</span>
+                <span>정운호</span>
+                <span class="business-number">220-87-77410</span>
+                <span>강남 00622호</span>
+                <span>김보람 cpo@naturerepublic.com</span>
+              </li>
+            </ul>
+            <ul class="footer-adress">
+              <li><span class="adress-text">서울 강남구 테헤란로 534 (대치동, 글라스타워빌딩) 22,23,24층</span></li>
+              <li><a class="adress-map" href="#">찾아오시는길</a></li>
+              <li><p class="footer-notice">
+                고객님의 안전거래를 위하여 무통장입금 거래에 대해
+                <br>
+                KCP의 구매안전서비스를 적용하고 있습니다.
+                <br>
+              </p>
+              <p class="footer-copy">
+                COPYRIGHTS(C) 2021 NATURE REPUBLIC ALL RIGHTS RESERVED.
+              </p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-right">
+          </div>
+        </div>
+        </div>
       </footer>
       <!--// footer -->
     </div>

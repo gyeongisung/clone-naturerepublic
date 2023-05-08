@@ -1,43 +1,198 @@
 @charset "utf-8";
-
 .special-title {
-    font-size: 46px;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 120px;
-    margin-bottom: 60px;
+  font-size: 2.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 60px;
+  height: 42px;
+}
+.special-img-title:hover {
+  text-decoration: underline;
 }
 .special-img {
+  width: 100%;
 }
 
+.special-img-tag {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 335px;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.special-slide-img-off {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.special-slide-img-on {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.special-img a:hover > .special-slide-img-off {
+  opacity: 0;
+}
+.special-img a:hover > .special-slide-img-on {
+  opacity: 1;
+}
+.special-badge-list {
+}
+.special-badge {
+  position: absolute;
+  width: 57.59px;
+}
+.special-badge:first-child {
+  top: 10px;
+  right: 10px;
+}
+.special-badge:nth-child(2) {
+  top: 70px;
+  right: 10px;
+}
+.special-badge:nth-child(3) {
+  top: 130px;
+  right: 10px;
+}
+.special-badge:nth-child(4) {
+  top: 190px;
+  right: 10px;
+}
+.special-img-icon {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 18%;
+  background: #333333;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+  border-radius: 0 0 30px 30px;
+}
+.special-img-icon::after {
+  display: inline-block;
+  position: absolute;
+  bottom: 25%;
+  left: calc(50% - 1px);
+  content: "";
+  width: 1px;
+  height: 25px;
+  line-height: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0 0 30px 30px;
+}
+.special-img a:hover > .special-img-icon {
+  transform: translateY(0);
+  opacity: 1;
+}
+.special-img-heart {
+  display: block;
+  position: absolute;
+  left: 20%;
+  bottom: 25%;
+  max-width: 100%;
+  opacity: 0;
+}
+.special-img a:hover > .special-img-icon .special-img-heart {
+  position: absolute;
+  left: 20%;
+  bottom: 25%;
+  max-width: 100%;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+.special-img-cart {
+  display: block;
+  position: absolute;
+  right: 20%;
+  bottom: 25%;
+  max-width: 100%;
+  opacity: 0;
+}
+.special-img a:hover > .special-img-icon .special-img-cart {
+  position: absolute;
+  right: 20%;
+  bottom: 25%;
+  max-width: 100%;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
 
+.special-img-title {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: -0.8px;
+  line-height: 1.2;
+  height: 42px;
+}
 
-
-.special-slide1{
-    height: 335px;
-    width: 335px;
+.coast {
 }
-.special-slide2{
-    height: 335px;
-    width: 335px;
+.coast-sale {
+  display: block;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -1.3px;
+  float: left;
 }
-.special-slide3{
-    height: 335px;
-    width: 335px;
+.coast-price {
+  display: block;
+  line-height: 26px;
+  font-weight: 500;
+  letter-spacing: -1.3px;
+  color: #bcbdc1;
+  margin-left: 15px;
+  text-decoration: line-through;
+  float: left;
 }
-.special-slide4{
-    height: 335px;
-    width: 335px;
+.coast-wish {
+  display: block;
+  float: right;
+  padding-top: 3px;
 }
-.special-slide1:hover {
-    content: url("../images/6.special/special1-1.jpg");
+.coast-wish-count {
+  vertical-align: middle;
 }
-.special-slide2:hover {
-    content: url("../images/6.special/special2-1.jpg");
+.special-bt {
+  display: block;
+  margin-top: 32px;
 }
-.special-slide3:hover {
-    content: url("../images/6.special/special3-1.gif");
+.special-bt li {
+  float: left;
 }
-.special-slide4:hover {
-    content: url("../images/6.special/special4-1.jpg");
+.special-bt-left {
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 30px;
+  width: 60px;
+  color: #fff;
+  background: #8a4933;
+  margin-right: 4px;
+}
+.special-bt-right {
+  height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 30px;
+  width: 60px;
+  color: #fff;
+  background: #89b03f;
 }

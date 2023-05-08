@@ -1,12 +1,12 @@
 @charset "utf-8";
 header {
+  margin-top: 25px;
 }
 header .inner {
   position: relative;
   width: 1400px;
   height: 106px;
   margin: 0 auto;
-  margin-top: 25px;
 }
 .header-left {
   width: 296px;
