@@ -143,7 +143,6 @@
   top: 50px;
   right: 0;
   padding: 50px 0 0 100px;
-  background: red;
 }
 .footer-contain {
   width: 333px;
@@ -153,6 +152,8 @@
   display: block;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
 }
 .footer-call {
   display: block;
@@ -161,6 +162,7 @@
   font-weight: 700;
   line-height: 1;
   margin-top: 10px;
+  letter-spacing: -0.8px;
 }
 .footer-weekend {
   display: block;
@@ -172,31 +174,60 @@
 }
 .footer-icon {
   display: flex;
+  align-items: center;
+  height: 30px;
   margin-top: 20px;
 }
-.footer-icon-store {
+.footer-icon li {
+  display: inline-block;
+  line-height: 30px;
+  margin-right: 60px;
+}
+.footer-store {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(/images/10.footer/icon_store.png);
   width: 35px;
   height: 30px;
-  margin-right: 60px;
-  display: list-item;
+  margin-right: 5px;
 }
-.footer-icon-store a {
+.footer-store-notice {
+  font-family: "Noto Sans KR";
   font-size: 16px;
   font-weight: 700;
+  vertical-align: 9px;
 }
-.footer-icon-membership {
+.footer-membership {
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
   background-image: url(/images/10.footer/icon_membership.png);
   width: 34px;
   height: 29px;
+  margin-right: 5px;
 }
-.footer-icon-membership a {
+.footer-member-notice {
+  font-family: "Noto Sans KR";
   font-size: 16px;
   font-weight: 700;
+  vertical-align: 9px;
+}
+.footer-site {
+  display: block;
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  width: 100%;
+  height: 35px;
+  margin-top: 41px;
+  padding: 0 30px 0 10px;
+  border: 0;
+  border-bottom: 1px solid #58595b;
+  letter-spacing: -0.8px;
+}
+.site-image {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  transform: rotate(180deg);
 }
