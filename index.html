@@ -14,6 +14,9 @@
     <script src="js/prefixfree.min.js"></script>
     <script src="js/respond.min.js"></script>
     <script src="js/header.js"></script>
+    <!-- J쿼리적용 -->
+    <script src="//code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="./js/my.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
@@ -27,20 +30,169 @@
       <!-- header -->
       <header class="header">
         <div class="inner">
-          <div class="header-left">
-            <a href="#"><div class="logo"></div></a>
+          <div class="lang-box">
+            <ul class="lang-list">
+              <li>KR</li>
+              <li>EN</li>
+            </ul>
           </div>
-
-          <div class="header-right">
+          <div class="gnb-wrap">
+            <div class="logo">
+              <a href="#">
+                <img src="./images/1.header/icon_logo_main.png" alt="로고">
+              </a>
+            </div>
+            <div class="gnb">
+              <ul class="gnb_list">
+                <li><a href="#">
+                  <img src="./images/1.header/icon_category_menu.png" alt="카테 이미지">
+                </a></li>
+                <li><a href="#">카테고리</a>
+                  <div class="cate-box">
+                    <ul class="cate-box-list">
+                      <li><a href="#">스킨케어</a></li>
+                      <li><a href="#">바디&헤어</a> </li>
+                      <li><a href="#">포인트 메이크업</a> </li>
+                      <li><a href="#">팩 & 마스크</a> </li>
+                      <li><a href="#">클랜징</a> </li>
+                      <li><a href="#">기획세트</a> </li>
+                      <li><a href="#">베이스 메이크업</a> </li>
+                      <li><a href="#">남성</a> </li>
+                      <li><a href="#">선케어</a> </li>
+                      <li><a href="#">화장소품</a> </li>
+                    </ul>
+                    <ul class="cate-box-content">
+                      <li>
+                        <ul>
+                          <li><a href="#">스킨/미스트</a></li>
+                          <li><a href="#">로션</a></li>
+                          <li><a href="#">에센스/세럼/앰플</a></li>
+                          <li><a href="#">크림</a></li>
+                          <li><a href="#">아이크림</a></li>
+                          <li><a href="#">베이비</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">바디클렌저</a></li>
+                          <li><a href="#">바디로션/크림/미스트</a></li>
+                          <li><a href="#">바디오일/스크럽</a></li>
+                          <li><a href="#">향수/방향/디퓨저</a></li>
+                          <li><a href="#">핸드/풋케어</a></li>
+                          <li><a href="#">데오드란트/제모</a></li>
+                          <li><a href="#">바디기타</a></li>
+                          <li><a href="#">샴푸/린스</a></li>
+                          <li><a href="#">헤어팩/에센스</a></li>
+                          <li><a href="#">스타일링</a></li>
+                          <li><a href="#">헤어컬러링</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">블러셔/하이라이터</a></li>
+                          <li><a href="#">아이섀도우</a></li>
+                          <li><a href="#">마스카라</a></li>
+                          <li><a href="#">아이라이너</a></li>
+                          <li><a href="#">아이브로우</a></li>
+                          <li><a href="#">립밤/틴트</a></li>
+                          <li><a href="#">립스틱/립라이너</a></li>
+                          <li><a href="#">립글로스</a></li>
+                          <li><a href="#">네일</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">마스크시트</a></li>
+                          <li><a href="#">부분마스크시트</a></li>
+                          <li><a href="#">워시오프/필오프팩</a></li>
+                          <li><a href="#">슬리핑팩</a></li>
+                          <li><a href="#">마사지</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">클렌징폼</a></li>
+                          <li><a href="#">클렌지워터/오일</a></li>
+                          <li><a href="#">클렌징크림</a></li>
+                          <li><a href="#">클렌징티슈/비누</a></li>
+                          <li><a href="#">클렌징기타</a></li>
+                          <li><a href="#">립/아이리무버</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">섹조세트</a></li>
+                          <li><a href="#">기초세트</a></li>
+                          <li><a href="#">바디세트</a></li>
+                          <li><a href="#">옴므세트</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">베이스/프라이머</a></li>
+                          <li><a href="#">파운데이션/컨실러</a></li>
+                          <li><a href="#">CC/BB</a></li>
+                          <li><a href="#">파우더/팩트/쿠션</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">스킨/로션</a></li>
+                          <li><a href="#">크림/에센스/아이</a></li>
+                          <li><a href="#">클렌징/쉐이빙</a></li>
+                          <li><a href="#">선케어/BB</a></li>
+                          <li><a href="#">기타</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">선크림/젤</a></li>
+                          <li><a href="#">선스프레이/퍼프</a></li>
+                          <li><a href="#">기타</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul>
+                          <li><a href="#">퍼프</a></li>
+                          <li><a href="#">브러쉬</a></li>
+                          <li><a href="#">화장솜/면봉</a></li>
+                          <li><a href="#">클렌징소품</a></li>
+                          <li><a href="#">메이크업소품</a></li>
+                          <li><a href="#">네일소품</a></li>
+                          <li><a href="#">기타소품</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                </li>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">신상품</a></li>
+                <li><a href="#">기획전</a></li>
+                <li><a href="#">리뷰</a></li>
+                <li><a href="#">맴버십</a></li>
+                <li><a href="#">브랜드</a></li>
+              </ul>
+              <ul class="account-list">
+                <li><a href="#"><img src="./images/1.header/icon_gnb_login.png" alt="계정관련이미지"></a></li>
+                <li><a href="#"><img src="./images/1.header/icon_gnb_mypage.png" alt="계정관련이미지"></a></li>
+                <li><a href="#"><img src="./images/1.header/icon_gnb_cart.png" alt="계정관련이미지"></a></li>
+                <li><a href="#"><img src="./images/1.header/icon_gnb_search.png" alt="계정관련이미지"></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="header-left">
+            <a href="#"><div class="logo"></div></a>
+          </div> -->
+          <!-- <div class="header-right">
             <ul class="lang">
-              <li><em>KR</em></li>
+              <li>KR</li>
               <li><span>EN</span></li>
             </ul>
-
             <ul class="gnb">
               <li>
                 <a href="#">
-                  <img src="./images/1.header/icon_category_menu.png" alt="아이콘" class="g-icon" />
+                  <img src="images/1.header/icon_category_menu.png" alt="icon" class="icon">
                 </a>
               </li>
               <li class="gnb-cate">
@@ -87,9 +239,9 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </div> -->
 
-          <div class="cate-box">
+          <!-- <div class="cate-box">
             <ul class="sub1-1">
               <li><a href="#">스킨케어</a></li>
               <li><a href="#">바디&amp;헤어</a></li>
@@ -110,7 +262,6 @@
               <li><a href="#">아이크림</a></li>
               <li><a href="#">베이비</a></li>
             </ul>
-
             <ul class="sub1-3">
               <li>
                 <a href="#">
@@ -134,8 +285,8 @@
                 <a href="#">
                   <div>
                     <img src="images/1.header/cate3.jpg" alt="허브" />
-                    <p><b>[더블할인] 허브올로지 아르테미시아 엑스트라 수딩 크림</b></p>
-                    <b>21,900</b>원<span>37,000원</span>
+                    <p><b>허브올로지 아르테미시아 엑스트라 수딩크림</b></p>
+                    <b>29,000</b>원<span>37,000원</span>
                   </div>
                 </a>
               </li>
@@ -159,7 +310,7 @@
                 </a> -->
               </li>
             </ul>
-          </div>
+          </div> -->
 
 
         </div>
