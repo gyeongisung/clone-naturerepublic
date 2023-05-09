@@ -1,57 +1,115 @@
 @charset "utf-8";
-
 .brand {
-    margin-top: 40px;
+  margin-top: 40px;
 }
-
 .brand .inner {
+  position: relative;
 }
-
 .brand-banner {
-    display: block;
-    width: 600px;
+  display: block;
+  width: 600px;
 }
-
 .brand-banner a {
-    display: block;
-    width: 600px;
-    height: 600px;
-    border-radius: 10%;
-    overflow: hidden;
+  display: block;
+  width: 600px;
+  height: 600px;
+  border-radius: 10%;
+  overflow: hidden;
 }
 .brand-banner a img {
-    width: 600px;
-    height: 600px;
+  width: 600px;
+  height: 600px;
+  transition: transform 0.3s ease-in-out;
 }
-
 .brand-banner a img:hover {
-    transition: 0.5s ease-in-out;
-    transform: scale(1.1);
+  transform: scale(1.05);
 }
-
 .brand-item {
-    display: block;
-    width: calc(100% - 600px);
-    padding-left: 50px;
-    float: left;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 43%;
+  width: calc(100% - 600px);
+  padding-left: 50px;
 }
-
 .brand-line {
-    display: block;
-    font-size: 46px;
-    font-weight: 700;
+  font-family: "Manrope", sans-serif;
+  font-size: 46px;
+  font-weight: 700;
 }
-
 .brand-concept {
-    display: block;
-    font-size: 24px;
-    font-weight: 700;
-    color: #3a5542;
+  font-family: "Manrope", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #3a5542;
+  margin-top: 30px;
 }
-
 .brand-title {
-    display: block;
-    font-size: 18px;
-    font-family: "Noto Sans KR";
-    color: #58595b;
+  font-size: 18px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #58595b;
+  margin-top: 5px;
+  font-weight: 400;
+  letter-spacing: -0.9px;
+}
+.brand-slide-img {
+  position: relative;
+  width: 240px;
+  margin-top: 30px;
+  height: 400px;
+}
+.brand-img-group {
+  position: relative;
+  width: 238px;
+  height: 238px;
+}
+.brand-img-off {
+  position: absolute;
+  border: 1px solid #eeeeee;
+  border-radius: 30px;
+  width: 238px;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.brand-img-on {
+  position: absolute;
+  border: 1px solid #eeeeee;
+  border-radius: 30px;
+  width: 238px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.brand-slide-img a:hover > .brand-img-off {
+  opacity: 0;
+}
+.brand-slide-img a:hover > .brand-img-on {
+  opacity: 1;
+}
+.brand-icon {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 15%;
+  bottom: -44.3%;
+  border-radius: 0 0 30px 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.brand-icon-heart {
+  width: 28px;
+  height: 25px;
+}
+.brand-icon-cart {
+  width: 28px;
+  height: 25px;
+}
+.brand-img-title {
+  position: absolute;
+  left: 0;
+  bottom: 25%;
 }
