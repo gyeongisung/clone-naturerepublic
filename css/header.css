@@ -92,7 +92,7 @@ header .inner {
   }
 
   .cate-box {
-    display: flex;
+    display: none;
     position: absolute;
     top: 126px;
     left: 0px;
