@@ -2,11 +2,28 @@
 .ranking > .inner {
   position: relative;
   margin-top: 100px;
+  display: flex;
 }
+
+.ranking-area {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 587px;
+}
+
 .ranking-wrap {
   position: relative;
   width: 450px;
   height: 587px;
+  z-index: 9999;
+}
+
+.ranking-slide {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: calc(100% - 100px);
 }
 .ranking-title {
   font-size: 46px;
@@ -43,6 +60,7 @@
 .ranking-item {
   position: absolute;
   left: 0;
+  top: 155px;
   bottom: 0;
 }
 .ranking-rank {
@@ -50,26 +68,135 @@
   flex-direction: column;
 }
 .ranking-rank li {
+  position: relative;
   width: 450px;
   height: 70px;
   line-height: 70px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
+  font-family: "Noto Sans KR";
   border-bottom: 1px solid #e7e7e7;
 }
+.ranking-rank li a {
+  position: relative;
+  display: block;
+}
+.rank-number {
+  padding-right: 20px;
+  margin-left: 40px;
+}
 .ranking-rank li .ranking-up {
-  background-image: url(/images/3.ranking/icon_rank_up.png);
-}
-.sw-ranking {
   position: absolute;
-  top: 0;
-  left: 50%;
-  width: 400px;
+  right: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 10px;
+  /* background: url("../images/3.ranking/icon_rank_up.png") no-repeat center; */
+  background-image: url("../images/3.ranking/icon_rank_up.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
-.ranking-slide {
+/* 포커스시 색상 및 글꼴 처리 */
+.ranking-rank li.red-active a span {
+  color: #557705 !important;
+  font-weight: 700;
+}
+
+.ranking-slide-img {
+  position: relative;
+  opacity: 1;
+  transition: all 0.3s;
+  text-align: center;
+  overflow: hidden;
+}
+.ranking-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.ranking-img img {
+  width: 100%;
+  height: 100%;
+
+  transition: transform 0.5s;
+}
+.sw-ranking .swiper-slide {
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.sw-ranking .swiper-slide-active {
+  opacity: 1;
+}
+.sw-ranking .swiper-slide-active .ranking-img img {
+  transform: scale(1.1);
+}
+
+.sw-ranking .swiper-slide-prev {
+  /* opacity: 0; */
+}
+
+.sw-ranking .swiper-slide-next {
+  opacity: 0.3;
+}
+.ranking-slide-img .ranking-icon {
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  border-radius: 0 0 30px 30px;
+  bottom: -5px;
+  right: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(100%);
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
-.ranking-slide li img {
-  width: 400px;
+.ranking-slide-img:hover .ranking-icon {
+  overflow: hidden;
+  opacity: 1;
+  transform: translateY(-10%);
+}
+.ranking-slide-img .ranking-icon::before {
+  display: inline-block;
+  position: absolute;
+  bottom: 25%;
+  left: calc(50% - 1px);
+  content: "";
+  width: 1px;
+  height: 30px;
+  line-height: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.ranking-heart {
+  width: 28px;
+  height: 25px;
+  opacity: 0.5;
+}
+.ranking-heart:hover {
+  opacity: 1;
+}
+.ranking-cart {
+  width: 28px;
+  height: 25px;
+  opacity: 0.5;
+}
+.ranking-cart:hover {
+  opacity: 1;
+}
+.ranking-bt-title {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.9px;
+  height: 44px;
+  line-height: 22px;
+  color: rgba(51, 51, 51);
 }
