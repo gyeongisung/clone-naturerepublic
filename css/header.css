@@ -82,13 +82,12 @@ header .inner {
 }
 .gnb_list .gnb-active img {
   display: inline-block;
-  margin:-10px 20px 0 -30px;
+  margin: -10px 20px 0 -30px;
 }
 .gnb_list > li:nth-child(1) {
   width: 120px;
 }
 .gnb_list > li:nth-child(2) {
-
 }
 .gnb_list > li:nth-child(6) {
   margin-right: 15px;
@@ -143,6 +142,7 @@ header .inner {
   font-weight: 400;
   width: 100%;
   color: rgb(51, 51, 51);
+  font-family:'Noto Sans KR';
 }
 
 .cate-box-list > li > a {
@@ -150,7 +150,7 @@ header .inner {
   color: #818286;
 }
 .cate-box-list > li > a:hover {
-  color:#000;
+  color: #000;
   font-weight: 700;
 }
 .cate-box-list > li > a:hover {
@@ -183,13 +183,12 @@ header .inner {
   background: lightgoldenrodyellow;
 }
 .cate-box-content-item {
-  
 }
 .cate-box-content-list > li {
   font-size: 16px;
   font-weight: 400;
   width: 170px;
-  margin-right:40px;
+  margin-right: 40px;
   color: rgb(51, 51, 51);
 }
 .cate-box-content-list > li:hover {
@@ -200,14 +199,14 @@ header .inner {
   color: #818286;
 }
 .cate-box-content-list > li > a:hover {
-  text-decoration:underline;
-  color:#000;
+  text-decoration: underline;
+  color: #000;
   font-weight: 700;
 }
 .cate-box-content-item {
-  position:absolute;
-  top:0;
-  left:392px;
+  position: absolute;
+  top: 0;
+  left: 392px;
   width: 100%;
   height: 100%;
 }
@@ -215,27 +214,26 @@ header .inner {
   height: 100%;
 }
 .cate-box-content-item li div {
-  margin-bottom:20px;
+  margin-bottom: 20px;
   width: 308px;
   height: 80px;
 }
 .cate-box-content-item li div img {
-  float:left;
-  margin-right:10px;
+  float: left;
+  margin-right: 10px;
   width: 78px;
   height: 78px;
   border-radius: 20px;
 }
 .content-item-list li div p {
-  padding-top:9px;
-  padding-bottom:5px;
+  padding-bottom: 5px;
   line-height: 19.2px;
   font-size: 16px;
   font-weight: 700;
-  color:rgba(51,51,51);
+  color: rgba(51, 51, 51);
 }
 .cate-box-content-item li:nth-child(1) {
-  margin-top:40px;
+  margin-top: 40px;
 }
 .cate-box-content-item li span {
   font-weight: 700;
@@ -244,37 +242,199 @@ header .inner {
 .cate-box-content-item li span:first-child {
 }
 
-.cate-box-content-item li span:last-child {
-  text-decoration:line-through;
-  margin-left:17px;
-  color:#818286
+.cate-box-content-item li span:last-child em {
+  text-decoration: line-through;
+  margin-left: 17px;
+  color: #818286;
 }
-.cate-box-content-item li span em {
+.content-item-list span em {
   font-size: 18px;
-  margin-right:3px;
+  margin-right: 3px;
 }
 .content-img {
-  position:absolute;
-  left:310px;
-  top:0;
+  position: absolute;
+  left: 310px;
+  top: 0;
   width: 400px;
-  height: auto;
-  margin-top:40px;
+  height: 400px;
+  margin-top: 40px;
 }
 .content-img .main {
+  display: block;
   width: 400px;
   height: 400px;
   border-radius: 20px;
+  margin-left: 0.5px !important;
 }
 .content-img p {
-  padding-top:20px;
-
+  padding-top: 20px;
 }
 .content-item-list {
-
+}
+.cate-box-red {
+  width: 100%;
+  height: 336px;
+}
+.cate-box-content-info {
+  padding: 40px 0;
+  width: 1100px;
+  height: 256px;
+  background-color: antiquewhite;
+}
+.cate-box-content-info > li {
+  float: left;
+  width: 335px;
+  height: 226.19px;
+  margin-right:20px;
+}
+.cate-box-content-info > li:first-child {
+  margin-left:55px;
+}
+.cate-box-content-info > li:last-child {
+  margin-right:0;
+}
+.cate-box-content-info li .infoimg {
+  display: block;
+  margin-bottom: 20px;
+  width: 335px;
+  height: 185px;
+  border-radius: 20px;
+}
+.cate-box-content-info li div {
 }
 
+.cate-box-content-info li div p {
+  font-size: 16px;
+  color: #333;
+}
+.cate-box-content-info li div p:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
+.cate-box-content-info li div span {
+  padding-top: 10px;
+  display: block;
+  font-size: 16px;
+  color: rgba(88, 89, 91);
+}
+.cate-box-blue {
+  height: 497px;
+}
+.cate-box-content-fin {
+  width: 1100px;
+  height: 416.04px;
+  padding:40px 0;
+  background-color: red;
+}
+.cate-box-content-fin li {
+  width: 320px;
+  float:left;
+}
+.cate-box-content-fin li:first-child {
+  margin-left:60px;
+  background-color: violet;
+}
+.cate-box-content-fin li:nth-child(2) {
+  background-color: gold;
+  margin-left:40px;
+}
+.cate-box-content-fin li:last-child {
+  margin-left:40px;
+  background-color: blue;
+}
+.cate-box-content-fin li  .cate-box-content-middle{
+  position: relative;
+}
+.cate-box-content-fin li .finimg {
 
+  width: 320px;
+  height: 280px;
+  border-radius: 20px;
+}
+.cate-box-content-fin li .cate-box-content-fin-info {
+  position:absolute;
+  left:20px;
+  top:233px;
+  border:1px solid #000;
+  border-radius: 20px;
+  width: 56px;
+  height: 30px;
+  background:#fff url("../images/1.header/icon_good.png") no-repeat 14px center;
+  border:0;
+}
+.cate-box-content-fin li .cate-box-content-fin-info p {
+  position:absolute;
+  right:0;
+  padding-right:15px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+} 
+.cate-box-content-fin li .cate-box-content-name {
+  width: 320px;
+  height: 30px;
+  margin-top:15px;
+}
+.cate-box-content-fin li .cate-box-content-name .crown {
+  float:left;
+  display: block;
+  width: 21px;
+  height: 19px;
+  margin-right:10px;
+  margin-top:5px;
+
+}
+.cate-box-content-fin li .cate-box-content-name p {
+  width: 140px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.cate-box-content-name-info {
+  width: 320px;
+  height: 18px;
+  margin-bottom:15px;
+  margin-top:15px;
+  background-color: lightcoral;
+}
+.cate-box-content-name-info p {
+  font-weight: 500;
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.cate-box-content-name-info p:hover {
+  text-decoration: underline;
+}
+.cate-box-content-search {
+  width: 320px;
+  height: 30px;
+  margin-top:20px;
+  background-color: thistle;
+}
+.cate-box-content-search p {
+  display: inline-block;
+  border:1px solid #e7e7e7;
+  border-radius: 15px; 
+  width: 62.21px;
+  height: 30px;
+  padding:0 12px;
+  margin-right:6px;
+  font-size: 14px;
+  line-height: 30px;
+  color:#58595b;
+  box-sizing: border-box;
+}
+.cate-box-content-search .cate-box-content-search-comb {
+  width: 75px;
+}
+
+.cate-box-
+.cate-box-content-fin li {}
+.cate-box-content-fin li {}
+.cate-box-content-fin li {}
 
 
 /* .cate-box-content-item {
