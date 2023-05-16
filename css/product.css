@@ -29,8 +29,8 @@
   left: 0;
   width: 440px;
   height: 440px;
+  transition: 0.3s ease-in-out;
 }
 .product-img > li > a > img:hover {
   transform: scale(1.05);
-  transition: 0.3s ease-in-out;
 }
