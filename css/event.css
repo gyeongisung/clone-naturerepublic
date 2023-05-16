@@ -1,91 +1,122 @@
 @charset "utf-8";
+
 .event {
-    background: lightgray;
-    height: 560px;
-  }
-  .event > .inner {
-    position: relative;
-    width: 1100px;
-    height: 600px;
-  }
-  
-  .event-slide {
-    position: relative;
-    display: block;
-    text-align: center;
-  }
-  .swiper {
-    overflow: visible;
-  }
-  .sw-event a img {
-    display: block;
-    width: 1100px;
-    height: 600px;
-    margin-top: 50px;
-    border-radius: 70px;
-  }
-  .event .depth {
-    position: absolute;
-    top: 440px;
-    left: 100px;
-    border: 1px solid #000;
-    border-radius: 30px;
-  }
-  .event .depth p {
-    padding: 8px 41px;
-    color: #000;
-    font-size: 22px;
-    letter-spacing: -1px;
-  }
-  
-  .swiper-pagination-bullet {
-    position: relative;
-    bottom:39px;
-    left:0;
-    width: 80px;
-    height:4px;
-    text-align: center;
-    line-height: 20px;
-    background: white;
-    opacity: 1;
-    border-radius: 20px;
-    opacity: 0.2;
-  }
-  .swiper-pagination-bullet-active {
-    background-color: #fff;
-    opacity: 1;
-  }
-  
-  
-  .sw-bt {
-    width: 25px;
-    height: 46px;
-    border: 0;
-    font-size: 0;
-    cursor: pointer;
-    background: url("/images/1.header/icon_arrow_main_slide.png") no-repeat center;
-    opacity: 0.5;
-  }
-  .sw-bt:hover {
-    background: url("/images/1.header/icon_arrow_main_slide.png");
-    opacity: 1;
-  }
-  .sw-prev {
-    position: absolute;
-    top: 303px;
-    left: 30px;
-    z-index: 99;
-  }
-  .sw-next {
-    position: absolute;
-    top: 303px;
-    right: 30px;
-    z-index: 99;
-    transform: rotate(180deg);
-  }
-  
-  .wrap-autoplay-control {position: absolute; z-index: 10; bottom: 44px; right: 200px; transform: translateX(-50%);}
-  .wrap-autoplay-control button {display: block; width: 20px; height: 20px; border: 0; background: transparent; cursor: pointer; }
-  .wrap-autoplay-control button:before {display: block; content: ''; position: absolute; }
-  .wrap-autoplay-control button[aria-pressed="false"]:before {top: 4px; left: 4px; width: 7px; height: 12px; border-left: 3px solid #fff; border-right: 3px solid #fff; box-sizing: border-box;}
-  .wrap-autoplay-control button[aria-pressed="true"]:before {top: 2px; left: 2px; border-top: 8px solid transparent; border-left: 16px solid #fff; border-bottom: 8px solid transparent;}
+  background-color: #ececec;
+  overflow-x: hidden;
+}
+.event > .inner {
+  position: relative;
+  width: 1100px;
+  height: 650px;
+}
+
+.event-slide {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.event .swiper {
+  overflow: visible;
+}
+.sw-event a img {
+  display: block;
+  width: 1100px;
+  height: 600px;
+  margin-top: 50px;
+  border-radius: 70px;
+}
+.event .depth {
+  position: absolute;
+  top: 440px;
+  left: 100px;
+  border: 1px solid #000;
+  border-radius: 30px;
+}
+.event .depth p {
+  padding: 8px 41px;
+  color: #000;
+  font-size: 22px;
+  letter-spacing: -1px;
+}
+
+.swiper-pagination-bullet {
+  position: relative;
+  bottom: 39px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  text-align: center;
+  line-height: 20px;
+  background: white;
+  opacity: 1;
+  border-radius: 20px;
+  opacity: 0.2;
+}
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.event .event-slide > .sw-bt {
+  width: 25px;
+  height: 46px;
+  border: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: url("/images/1.header/icon_arrow_main_slide.png") no-repeat center;
+  opacity: 0.5;
+}
+.event .event-slide > .sw-bt:hover {
+  background: url("/images/1.header/icon_arrow_main_slide.png") no-repeat center;
+  opacity: 1;
+}
+.event .event-slide > .sw-prev {
+  position: absolute;
+  top: 303px;
+  left: 30px;
+  z-index: 99;
+}
+.event .event-slide > .sw-next {
+  position: absolute;
+  top: 303px;
+  right: 30px;
+  z-index: 99;
+  transform: rotate(180deg);
+}
+
+.wrap-autoplay-control {
+  position: absolute;
+  z-index: 10;
+  bottom: 44px;
+  right: 200px;
+  transform: translateX(-50%);
+}
+.wrap-autoplay-control button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.wrap-autoplay-control button:before {
+  display: block;
+  content: "";
+  position: absolute;
+}
+.wrap-autoplay-control button[aria-pressed="false"]:before {
+  top: 4px;
+  left: 4px;
+  width: 7px;
+  height: 12px;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  box-sizing: border-box;
+}
+.wrap-autoplay-control button[aria-pressed="true"]:before {
+  top: 2px;
+  left: 2px;
+  border-top: 8px solid transparent;
+  border-left: 16px solid #fff;
+  border-bottom: 8px solid transparent;
+}

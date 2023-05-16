@@ -4,7 +4,6 @@ $(document).ready(function () {
 
   function gnb() {
     let gnblist = $(".gnb_list > li");
-    console.log;
     let catebox = $(".cate-box");
     gnblist.hover(
       function () {
