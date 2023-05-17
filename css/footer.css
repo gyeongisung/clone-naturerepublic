@@ -187,7 +187,7 @@
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(/images/10.footer/icon_store.png);
+  background-image: url("../images/10.footer/icon_store.png");
   width: 35px;
   height: 30px;
   margin-right: 5px;
@@ -202,7 +202,7 @@
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(/images/10.footer/icon_membership.png);
+  background-image: url("../images/10.footer/icon_membership.png");
   width: 34px;
   height: 29px;
   margin-right: 5px;

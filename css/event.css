@@ -64,11 +64,11 @@ body {
   border: 0;
   font-size: 0;
   cursor: pointer;
-  background: url("/images/1.header/icon_arrow_main_slide.png") no-repeat center;
+  background: url("../images/1.header/icon_arrow_main_slide.png") no-repeat center;
   opacity: 0.5;
 }
 .event .event-slide > .sw-bt:hover {
-  background: url("/images/1.header/icon_arrow_main_slide.png") no-repeat center;
+  background: url("../images/1.header/icon_arrow_main_slide.png") no-repeat center;
   opacity: 1;
 }
 .event .event-slide > .sw-prev {
