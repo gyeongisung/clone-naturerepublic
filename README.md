@@ -8,7 +8,7 @@
 <a href="https://github.com/gyeongisung">
 <img src="/src/assets/developer2.png" width="120px" height="120px">
 </a>
-<a href="https://github.com/devicepac">
+<a href="https://github.com/abismo-github)">
 <img src="/src/assets/developer3.png" width="120px" height="120px">
 </a>
 
