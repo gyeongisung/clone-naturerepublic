@@ -6,10 +6,10 @@
 
 
 <a href="https://github.com/gyeongisung">
-<img src="../assets/developer2.png" width="120px" height="120px">
+<img src="/assets/developer2.png" width="120px" height="120px">
 </a>
 <a href="https://github.com/abismo-github">
-<img src="../assets/developer3.png" width="120px" height="120px">
+<img src="/assets/developer3.png" width="120px" height="120px">
 </a>
 
 - 견기성(Team Leader)
