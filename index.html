@@ -15,7 +15,8 @@
     <script src="js/respond.min.js"></script>
     <!-- J쿼리적용 -->
     <script src="//code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="./js/my.js"></script>
+    <script src="/js/my.js"></script>
+    <script src="js/modal.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
@@ -25,6 +26,32 @@
     <!-- 플라잉 배너 -->
   </head>
   <body>
+    <div class="modal">
+      <div class="modal-cont">
+        <span class="cont-title">클론코드 안내사항</span>
+        <div class="cont-text">
+          <span>
+            해당 사이트는 학습용 포트폴리오로<br />
+            개발이 되었으므로 정식 사이트 Any-Chem과<br />
+            아무련 관련이 없음을 알려드립니다.
+          </span>
+          <div class="cont-img-wrap">
+            <p>
+              <a href="https://github.com/gyeongisung/clone-anychem"
+                ><img class="cont-img" src="images/github.svg" alt="git"
+              /></a>
+            </p>
+            <p>
+              <a
+                href="https://www.notion.so/Team-Project-NCT-7e83314d30864f06af0fc2e14d46844c?pvs=4"
+                ><img class="cont-img" src="images/notion.svg" alt="notion"
+              /></a>
+            </p>
+          </div>
+          <button class="cont-btn">확인</button>
+        </div>
+      </div>
+    </div>
     <div class="wrap">  
       <!-- header -->
       <header class="header">
